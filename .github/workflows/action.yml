@@ -16,7 +16,4 @@ jobs:
           cache: 'pip'
       - run: pip install -r requirements.txt
       - run: |
-          CHANGED_FILES=`git diff --name-only ${{ github.event.before }} ${{ github.event.after }}`
-          echo $CHANGED_FILES
-          python script/convert.py
-
+          CHANGED_FILES=`git diff --name-only ${{ github.event.before }} ${{ github.event.after }}` python script/convert.py
