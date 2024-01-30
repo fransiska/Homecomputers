@@ -4,7 +4,7 @@ import os
 import numpy as np
 
 def main():
-    print("Changed files", os.environ["CHANGED_FILES"])
+    print("Changed files", os.environ.get("CHANGED_FILES"))
     a = np.arange(15).reshape(3, 5)
     print("array", a)
 
