@@ -8,8 +8,8 @@ def main():
     print("Changed files", os.environ.get("CHANGED_FILES"))
     a = np.arange(15).reshape(3, 5)
     print("array", a)
-    with open("converted.txt", "w") as f:
-        f.write(datetime.now().isoformat())
+    with open("SC3000/converted.txt", "w") as f:
+        f.write(f"{datetime.now().isoformat()} ")
         f.write(os.environ.get("CHANGED_FILES"))
 
 if __name__ == "__main__":
