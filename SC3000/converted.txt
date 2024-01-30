@@ -1,2 +1,2 @@
-2024-01-30T23:48:16.378769 SC3000/cassette2.bas
-converted.txt
+2024-01-30T23:49:59.743684
+script/convert.py
