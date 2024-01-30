@@ -9,7 +9,7 @@ def main():
     a = np.arange(15).reshape(3, 5)
     print("array", a)
     with open("SC3000/converted.txt", "w") as f:
-        f.write(f"{datetime.now().isoformat()} ")
+        f.write(f"{datetime.now().isoformat()}\n")
         f.write(os.environ.get("CHANGED_FILES"))
 
 if __name__ == "__main__":
